@@ -26858,11 +26858,11 @@ body {
 }
 
 .spacial-features {
-  margin-top: 110px;
+  padding-top: 110px;
 }
 @media (max-width: 767px) {
   .spacial-features {
-    margin-top: 60px;
+    padding-top: 60px;
   }
 }
 .spacial-features .header {
@@ -37279,7 +37279,7 @@ body {
   .agency-start-project-form form textarea {
     padding: 15px 20px;
     font-size: 16px;
-  }
+  } 
 }
 .agency-start-project-form form input[type="text"]:focus,
 .agency-start-project-form form input[type="email"]:focus,
@@ -37343,4 +37343,7 @@ body {
   background-position: center center;
 }
 
+html {
+  scroll-behavior: smooth; 
+}
 /*# sourceMappingURL=theme.css.map */
