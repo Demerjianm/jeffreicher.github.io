@@ -22,9 +22,11 @@
 
 
   <!-- javascript -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <script src="dist/theme.min.js"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> -->
+  <!-- <script src="dist/theme.min.js"></script> -->
   <script src='js/main.js'></script>
+  <script src="js/ScrollTrigger.min.js"></script>
+
 </head>
 
 <body>
@@ -48,7 +50,7 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbar-collapse">
         <ul class="navbar-nav">
           <li class="nav-item dropdown">
-            <a href="#about" class="nav-link dropdown-toggle">
+            <a href="#about" class="nav-link">
               About
             </a>
           </li>
@@ -59,24 +61,27 @@
             </a>
             <div class="dropdown-menu" role="menu">
               <a class="dropdown-item" href="index.html">Onboarding</a>
-              <a class="dropdown-item" href="index-app.html">Payroll</a>
+              <!-- <a class="dropdown-item" href="index-app.html">Payroll</a>
+              <a class="dropdown-item" href="index-app.html">Consulting</a> -->
+
             </div>
           </li>
           <li class="nav-item dropdown">
-            <a href="#pricing" class="nav-link dropdown-toggle">
+            <a href="#pricing" class="nav-link">
               Pricing
             </a>
           </li>
-          <li class="nav-item dropdown">
+          <!-- <li class="nav-item dropdown">
             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
               Resources
               <i class="ion-chevron-down"></i>
             </a>
             <div class="dropdown-menu" role="menu">
               <a class="dropdown-item" href="index.html">Guides</a>
+              <a class="dropdown-item" href="index.html">References</a>
               <a class="dropdown-item" href="index-app.html">Blog</a>
             </div>
-          </li>
+          </li> -->
           <li class="nav-item">
             <a class="nav-link nav-link--rounded" href="#contact">Contact</a>
           </li>
@@ -94,12 +99,10 @@
   <!-- <div class="business-hero">
     <div class="container">
       <h2 class="customFadeInUp">
-        Take control of your business, integrate, automate and launch quickly.
+        Take control of your technology.
       </h2>
       <p class="customFadeInUp">
-        Millions of people use this theme. Each of them use it differently.
-        <br> So we created fifteen incredible new designs, some in collaboration with a few of the world's most influential
-        and carismatic people ever known.
+        Say goodbye to paperwork and hello to simplified onboarding so that you can focus on your employees.
       </p>
 
       <div class="actions customFadeInUp">
@@ -115,8 +118,7 @@
           <div class="header">
             <h2>About Us</h2>
             <p>
-              Spacial has both a web app and an android app to make your website easy and always available.
-            </p>
+              Baseline Software was founded over the belief that more often than not software is made more complicated than necessary </p>
           </div>
         </div>
       </div>
@@ -125,11 +127,11 @@
           <div class="feature">
             <img src="images/icons/spacial-devices.png">
             <h3>
-              Have conversations with your friends
+              Software that just works
             </h3>
             <p>
-              Spacial is the perfect solution for web developers and designers. You can get an awesome website for your best projects and
-              clients, and also get great support.
+              Whether you are on your desktop or mobile device an application should have the same capabilities. Along with that we believe
+              Baseline products find the right balance between usability and functionality.
             </p>
           </div>
         </div>
@@ -140,8 +142,8 @@
               Keep your information private & secure
             </h3>
             <p>
-              Spacial is designed to make showing off your best projects extremely fast and simple. There are many ways to configure. Just
-              go to the source, make changes.
+              It is important that your information stays your information. Software needs to be built with security from the start not
+              later.
             </p>
           </div>
         </div>
@@ -218,11 +220,11 @@
             <img src="images/icons/features-icon-world.png" class="icon" />
             <section>
               <h4>
-                Sell all over the world
+                Get ahead of the Game
               </h4>
               <p>
-                Use new components that come included, as shown in the theme docs you don't need to write any code to get a website up and
-                running.
+                The rise of technology has made it possible to engage your new hires from before day one. Turn an engaged applicant into
+                an engaged employee with HR Studios standalone onboarding application.
               </p>
             </section>
           </div>
@@ -244,8 +246,8 @@
   </div>
 
   <div class="index-devices" data-scroll>
-    <section id="pricing" class="clearfix spacial-features">
-      <img src="images/devices/devices-4.png" class="devices" />
+    <section id="pricing" class="clearfix pricing-spacial-features">
+      <img id="pricing-image" src="images/devices/employee_documents_desktop.jpg" class="devices" />
 
       <h4>Pricing</h4>
       <p>
@@ -265,7 +267,7 @@
     </section>
   </div>
 
-  <div class="index-features" data-scroll>
+  <!-- <div class="index-features" data-scroll>
     <div class="container">
       <header>
         <h3>Resources</h3>
@@ -329,18 +331,18 @@
         </div>
       </section>
     </div>
-  </div>
+  </div> -->
 
   <div class="business-single-client" data-scroll>
     <div class="quote-wrapper">
-      <img src="images/customers/logo-customer-7-w.png" class="logo">
+      <img src="images/logos/baseline_mountains_white_logo.png" class="logo">
       <p>
-        "Focus on creating and growing your projects and websites, and we‘ll take care of spinning up new designs for your users
-        and making sure they’re great. Work with all types of customers right out of the box while still getting great results
-        in your environment."
+        "Baseline Software has been a pleasure to work with.The application they've created worked right ouf of the box with no additional
+        set up besides inputting my employee's contact information. I'll be referring Baseline Software to any of my coustomers
+        that need a custom application built efficiently and on time.
       </p>
       <div class="author">
-        John Smith, Product Designer
+        Jennifer Hernandez, Business Owner
       </div>
     </div>
   </div>
@@ -348,7 +350,7 @@
   <div class="index-clients">
     <div class="container">
       <header>
-        <h4>Used and trusted by these guys</h4>
+        <h4>Supported by</h4>
       </header>
       <div class="row justify-content-center">
         <div class="col-12 col-md-3 col-lg">
@@ -380,17 +382,17 @@
     <div class="container">
       <div class="row menu">
         <div class="col-md-4 col-lg-3">
-          <h3 class="menu-title">Address</h3>
-          <p>9732 Olive Street, Temple City</p>
+          <h2 class="menu-title">Address</h2>
+          <p>10251 Trademark Street Bldg B Rancho Cucamonga, CA 91730</p>
         </div>
         <div class="col-md-4 col-lg-3">
-          <h3 class="menu-title">Contact</h3>
-          <p>626 417 9384 jeffreicher@yahoo.com
+          <h3 id="contact" class="menu-title">Contact</h3>
+          <p>michael@baselinesoftware.io
           </p>
         </div>
         <div class="col-md-4 col-lg-3">
           <h3 class="menu-title">Mission Statement</h3>
-          <p>We are the best. Pay us.</p>
+          <p>Building simple software for complex problems.</p>
         </div>
       </div>
       <div class="text-center menu">
@@ -409,7 +411,7 @@
   </footer>
 
   <script type="text/javascript">
-    $(function () {
+    document.addEventListener('DOMContentLoaded', function () {
       var trigger = new ScrollTrigger({
         toggle: {
           visible: 'customFadeInUp'
