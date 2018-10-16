@@ -60,7 +60,7 @@ function eventHandlers() {
   document.querySelector(".ion-iphone").addEventListener("click", function() {
     pricingId.setAttribute(
       "src",
-      "./images/devices/admin/admin_company_details_mobile.jpg"
+      "./images/devices/admin_company_details_mobile.jpg"
     );
     pricingId.classList.add("mobile-phone-image");
     pricingId.classList.remove("ipad-image");
