@@ -43,7 +43,7 @@ function eventHandlers() {
   document.querySelector(".ion-ipad").addEventListener("click", function() {
     pricingId.setAttribute(
       "src",
-      "./images/devices/employee/ipad_employee_details.png"
+      "./images/devices/Employee/ipad_employee_details.png"
     );
     pricingId.classList.remove("mobile-phone-image");
     pricingId.classList.add("ipad-image");
@@ -60,7 +60,7 @@ function eventHandlers() {
   document.querySelector(".ion-iphone").addEventListener("click", function() {
     pricingId.setAttribute(
       "src",
-      "./images/devices/admin_company_details_mobile.jpg"
+      "./images/devices/Admin/admin_company_details_mobile.jpg"
     );
     pricingId.classList.add("mobile-phone-image");
     pricingId.classList.remove("ipad-image");
