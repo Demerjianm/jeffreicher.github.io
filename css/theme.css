@@ -25885,6 +25885,7 @@ body {
 }
 .business-hero h2 {
   color: #fff;
+  text-shadow: 0px 1px 9px black;
   font-size: 48px;
   letter-spacing: .5px;
   font-family: Source Sans Pro, Helvetica Neue, Arial;
@@ -25932,7 +25933,8 @@ body {
   }
 }
 .business-hero p {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 1px 1px 7px black;
   margin-top: 40px;
   width: 480px;
   font-size: 16px;
