@@ -52,7 +52,7 @@ function eventHandlers() {
   document.querySelector(".ion-monitor").addEventListener("click", function() {
     pricingId.setAttribute(
       "src",
-      "./images/devices/employee_documents_desktop.jpg"
+      "./images/devices/employee_documents_desktop-min.jpg"
     );
     pricingId.classList.remove("mobile-phone-image", "ipad-image");
   });
@@ -60,7 +60,7 @@ function eventHandlers() {
   document.querySelector(".ion-iphone").addEventListener("click", function() {
     pricingId.setAttribute(
       "src",
-      "./images/devices/Admin/admin_company_details_mobile.jpg"
+      "./images/devices/Admin/admin_company_details_mobile-min.jpg"
     );
     pricingId.classList.add("mobile-phone-image");
     pricingId.classList.remove("ipad-image");
