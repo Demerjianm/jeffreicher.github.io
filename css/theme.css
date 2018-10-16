@@ -25858,24 +25858,13 @@ body {
 
 .business-hero {
   background: url("../images/devices/baseline_trio_screens.png");
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   background-position: center 0px;
   min-height: 100vh;
   padding-top: 220px;
   overflow: hidden;
   position: relative;
-}
-@media (max-width: 1024px) {
-  .business-hero {
-    background-attachment: inherit;
-  }
-}
-@media (max-width: 991px) {
-  .business-hero {
-    padding-top: 100px;
-    height: auto;
-    padding-bottom: 100px;
-  }
 }
 .business-hero .container {
   position: relative;
@@ -25888,7 +25877,7 @@ body {
   top: 0;
   height: 100%;
   width: 100%;
-  background: linear-gradient(-45deg, rgba(63, 89, 118, 0.3) 0, rgba(14, 20, 34, 0.5) 80%);
+  background: linear-gradient(-90deg, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.5) 54%);
 }
 .business-hero h2 {
   color: #fff;
@@ -25905,6 +25894,26 @@ body {
   -ms-animation-delay: 0.1s;
   animation-delay: 0.1s;
 }
+@media (max-width: 1024px) {
+  .business-hero {
+    background: url("../images/devices/Admin/admin_employee_list_mobile.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+@media (max-width: 991px) {
+  .business-hero {
+    padding-top: 185px;
+    height: auto;
+    padding-bottom: 100px;
+  }
+
+  .business-hero:after {
+    background: linear-gradient(-90deg, rgba(0, 0, 0, 0.6) 0, rgba(0, 0, 0, 0.6) 0);
+  }
+}
+
 @media (max-width: 991px) {
   .business-hero h2 {
     font-size: 43px;
