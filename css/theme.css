@@ -25892,7 +25892,7 @@ body {
   font-weight: 300;
   line-height: 54px;
   width: 800px;
-  text-shadow: 0 2px 1px rgba(0, 0, 0, 0.11);
+  /* text-shadow: 0 2px 1px rgba(0, 0, 0, 0.11); */
   -webkit-animation-delay: 0.1s;
   -moz-animation-delay: 0.1s;
   -o-animation-delay: 0.1s;
