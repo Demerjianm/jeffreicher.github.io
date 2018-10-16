@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", function() {
   var callback = function() {
     eventHandlers();
@@ -76,3 +75,4 @@ function eventHandlers() {
       dropdownItems[i].classList.remove("show");
     });
   }
+}
