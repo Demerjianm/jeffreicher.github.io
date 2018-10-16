@@ -43,7 +43,7 @@
 document.addEventListener("DOMContentLoaded", function() {
   var callback = function() {
     // Handler when the DOM is fully loaded
-    clickHandlers();
+    eventHandlers();
     // smoothScroll();
     // anchorLinkHandler();
     // FadeIn();
@@ -128,40 +128,38 @@ function anchorLinkHandler(e) {
   }, 100);
 }
 
-function clickHandlers() {
+function eventHandlers() {
   const linksToAnchors = document.querySelectorAll('a[href^="#"]');
+  const pricingId = document.querySelector("#pricing-image");
   linksToAnchors.forEach(each => (each.onclick = anchorLinkHandler));
 
   document.querySelector(".ion-ipad").addEventListener("click", function() {
-    document
-      .querySelector("#pricing-image")
-      .setAttribute("src", "./images/devices/baseline_screenshots_1.png");
-    document
-      .querySelector("#pricing-image")
-      .classList.remove("mobile-phone-image");
+    pricingId.setAttribute(
+      "src",
+      "./images/devices/employee/ipad_employee_details.png"
+    );
+    pricingId.classList.remove("mobile-phone-image");
+    pricingId.classList.add("ipad-image");
     console.log("clicked");
   });
 
   document.querySelector(".ion-monitor").addEventListener("click", function() {
-    document
-      .querySelector("#pricing-image")
-      .setAttribute("src", "./images/devices/employee_documents_desktop.jpg");
-    document
-      .querySelector("#pricing-image")
-      .classList.remove("mobile-phone-image");
+    pricingId.setAttribute(
+      "src",
+      "./images/devices/employee_documents_desktop.jpg"
+    );
+    pricingId.classList.remove("mobile-phone-image", "ipad-image");
     console.log("clicked");
   });
 
   document.querySelector(".ion-iphone").addEventListener("click", function() {
-    document
-      .querySelector("#pricing-image")
-      .setAttribute(
-        "src",
-        "./images/devices/admin/admin_company_details_mobile.jpg"
-      );
-    document
-      .querySelector("#pricing-image")
-      .classList.add("mobile-phone-image");
+    pricingId.setAttribute(
+      "src",
+      "./images/devices/admin/admin_company_details_mobile.jpg"
+    );
+    pricingId.classList.add("mobile-phone-image");
+    pricingId.classList.remove("ipad-image");
+
     console.log("clicked");
   });
 

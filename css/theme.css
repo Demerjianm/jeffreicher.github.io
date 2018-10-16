@@ -24826,7 +24826,7 @@ you can use the generic selector below, but it's slower:
 
 .footer-big-menu {
   margin-top: 120px;
-  padding: 80px 0 50px;
+  padding: 60px 0 50px;
   background: #2B4255;
   position: relative;
 }
@@ -26351,6 +26351,11 @@ body {
   left: 600px !important;
 }
 
+.ipad-image {
+  width: 650px !important;
+  top: 110px !important;
+}
+
 .index-features {
   margin-top: 120px;
   background: #fafafa;
@@ -26467,7 +26472,7 @@ body {
   position: absolute;
   width: inherit;
   left: 430px;
-  top: 90px;
+  top: 100px;
 }
 
 @media (max-width: 767px) {
@@ -26495,6 +26500,7 @@ body {
 .index-devices .icons i {
   color: #C2C0E7;
   margin-right: 20px;
+  cursor: pointer;
 }
 .index-devices .icons .ion-monitor {
   font-size: 44px;
