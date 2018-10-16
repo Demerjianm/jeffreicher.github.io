@@ -24890,7 +24890,8 @@ you can use the generic selector below, but it's slower:
   font-weight: 600;
   margin-bottom: 20px;
 }
-.footer-big-menu .menu p {
+.footer-big-menu .menu p,
+.footer-big-menu .menu a {
   color: #68849a;
   font-size: 15px;
 }
