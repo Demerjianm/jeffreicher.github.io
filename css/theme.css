@@ -26079,7 +26079,7 @@ body {
 .business-single-client {
   margin-top: 160px;
   height: 500px;
-  background-image: url("../images/unsplash/photo-1479243396208-be1751535cdb.jpg");
+  background-image: url("../images/photo-1479243396208-be1751535cdb.jpg");
   background-size: cover;
   background-position: center center;
   position: relative;
@@ -26345,6 +26345,12 @@ body {
   }
 }
 
+
+.mobile-phone-image {
+  width: 250px !important;
+  left: 600px !important;
+}
+
 .index-features {
   margin-top: 120px;
   background: #fafafa;
@@ -26431,7 +26437,7 @@ body {
 }
 
 .index-devices {
-  padding-top: 140px;
+  padding-top: 40px;
   overflow-x: hidden;
 }
 @media (max-width: 767px) {
@@ -26459,9 +26465,11 @@ body {
 }
 .index-devices .devices {
   position: absolute;
+  width: inherit;
   left: 430px;
-  top: -15px;
+  top: 90px;
 }
+
 @media (max-width: 767px) {
   .index-devices .devices {
     display: none;
@@ -26868,6 +26876,10 @@ body {
 
 .spacial-features {
   padding-top: 110px;
+}
+
+.pricing-spacial-features {
+  padding-top: 170px;
 }
 @media (max-width: 767px) {
   .spacial-features {
@@ -27882,7 +27894,7 @@ body {
 .index-features-header {
   min-height: 570px;
   position: relative;
-  background: url("../images/unsplash/photo-1479243396208-be1751535cdb.jpg");
+  background: url("../images/photo-1479243396208-be1751535cdb.jpg");
   background-size: cover;
   background-position: center center;
 }
