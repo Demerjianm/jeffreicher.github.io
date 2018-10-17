@@ -26449,7 +26449,7 @@ body {
 }
 
 .index-devices {
-  padding-top: 40px;
+  /* padding-top: 40px; */
   overflow-x: hidden;
 }
 @media (max-width: 767px) {
@@ -26466,7 +26466,7 @@ body {
 }
 @media (max-width: 991px) {
   .index-devices > section {
-    padding: 0 30px;
+    padding: 60px 30px;
     width: auto;
   }
 }
