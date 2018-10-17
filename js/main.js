@@ -76,7 +76,9 @@ function eventHandlers() {
     });
   }
   let mobileHamburger = document.querySelector('[data-toggle="collapse"]');
-  let mobileNavItems = document.querySelectorAll(".navbar-nav > .nav-item");
+  let mobileNavItems = document.querySelectorAll(
+    ".navbar-nav > .toggle-effect, .dropdown-item"
+  );
   let selector;
   mobileHamburger.addEventListener(
     "click",
@@ -86,8 +88,15 @@ function eventHandlers() {
     },
     false
   );
-  console.log(mobileNavItems);
-
+  window.addEventListener(
+    "click",
+    () => {
+      // const selector = event.target.getAttribute("data-target");
+      // collapse(selector, "hide");
+      document.querySelector("#navbar-collapse").classList.remove("show");
+    }
+    // false
+  );
   for (let x = 0; x < mobileNavItems.length; x++) {
     mobileNavItems[x].addEventListener(
       "click",
