@@ -75,4 +75,67 @@ function eventHandlers() {
       dropdownItems[i].classList.remove("show");
     });
   }
+  let mobileHamburger = document.querySelector('[data-toggle="collapse"]');
+  let mobileNavItems = document.querySelectorAll(
+    ".navbar-nav > .toggle-effect, .dropdown-item"
+  );
+  let selector;
+  mobileHamburger.addEventListener(
+    "click",
+    event => {
+      selector = event.target.getAttribute("data-target");
+      collapse(selector, "toggle");
+    },
+    false
+  );
+  window.addEventListener(
+    "click",
+    () => {
+      // const selector = event.target.getAttribute("data-target");
+      // collapse(selector, "hide");
+      document.querySelector("#navbar-collapse").classList.remove("show");
+    }
+    // false
+  );
+  for (let x = 0; x < mobileNavItems.length; x++) {
+    mobileNavItems[x].addEventListener(
+      "click",
+      () => {
+        // const selector = event.target.getAttribute("data-target");
+        // collapse(selector, "hide");
+        document.querySelector("#navbar-collapse").classList.remove("show");
+      }
+      // false
+    );
+  }
 }
+
+// Grab all the trigger elements on the page
+//   const triggers = Array.from(
+//     document.querySelectorAll('[data-toggle="collapse"]')
+//   );
+//   // Listen for click events, but only on our triggers
+//   window.addEventListener(
+//     "click",
+//     ev => {
+//       const elm = ev.target;
+//       if (triggers.includes(elm)) {
+//         const selector = elm.getAttribute("data-target");
+//         collapse(selector, "toggle");
+//       }
+//     },
+//     false
+//   );
+// }
+// map our commands to the classList methods
+const fnmap = {
+  toggle: "toggle",
+  show: "add",
+  hide: "remove"
+};
+
+const collapse = (selector, cmd) => {
+  // const targets = Array.from(document.querySelectorAll(selector));
+  // targets.forEach(target => {
+  () => selector.classList[fnmap[cmd]]("show");
+};
