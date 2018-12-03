@@ -26479,7 +26479,7 @@ body {
   position: absolute;
   width: inherit;
   left: 430px;
-  top: 100px;
+  /* top: 100px; */
 }
 
 @media (max-width: 767px) {
